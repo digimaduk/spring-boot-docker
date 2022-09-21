@@ -1,0 +1,4 @@
+server:
+  servlet:
+    context-path: /sprint-boot-docker
+  port: 8081

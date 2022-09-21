@@ -1,0 +1,17 @@
+# WhiteLabel Error Page is a generic Spring Boot error page that is displayed when no custom error page is present.
+# A WhiteLabel Error can is disabled in the application.properties or application.yml file by setting either of below property
+
+#spring:
+#  autoconfigure:
+#    exclude: org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration
+
+#server:
+#  error:
+#    whitelabel:
+#      enabled: false
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: spring-boot-docker
