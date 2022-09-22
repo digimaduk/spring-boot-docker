@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  message-server:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: message-server:latest
+    ports:
+      - 8887:8081
+    networks:
+      - spring-cloud-network
+
+networks:
+  spring-cloud-network:
+    driver: bridge
